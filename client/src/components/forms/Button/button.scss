@@ -1,0 +1,26 @@
+@import "../../../assets/style/components.scss";
+
+.main-button {
+  position: relative;
+  color: $main-button-color;
+  background-color: $main-button-bg;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 7px 50px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.main-button::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main-button:hover::before {
+  border-color: $main-button-hover-border-color;
+}

@@ -1,0 +1,13 @@
+@import "../../../assets/style/components.scss";
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: $danger;
+  margin-top: -16px;
+  margin-bottom: 20px;
+  p {
+    margin: 0;
+    font-size: 15px;
+  }
+}
