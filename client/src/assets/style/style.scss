@@ -1,0 +1,35 @@
+@import "./components.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Jost", sans-serif;
+}
+input {
+  text-transform: none;
+}
+img {
+  max-width: 100%;
+}
+
+.main-input {
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid $border-color;
+  outline: none;
+  transition: 0.3s;
+  padding: 7px;
+  width: 100%;
+  &::placeholder {
+    color: #757575;
+  }
+  &:focus {
+    // border-width: 2px;
+    // border-color: $border-color-active;
+    outline: 1px solid #000;
+  }
+}
