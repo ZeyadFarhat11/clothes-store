@@ -1,13 +1,13 @@
 import { Formik, Form, Field } from "formik";
 import validator from "validator";
-import Button from "../components/forms/Button/Button";
-import { cls, api } from "../utils/utils";
+import Button from "../../components/forms/Button/Button";
+import { cls, api } from "../../utils/utils";
 import { useState } from "react";
-import handleError from "../utils/handleError";
-import Breadcrumb from "../components/forms/Breadcrumb/Breadcrumb";
+import handleError from "../../utils/handleError";
+import Breadcrumb from "../../components/forms/Breadcrumb/Breadcrumb";
 import { Link } from "react-router-dom";
-import FormErrorMessage from "../components/forms/ErrorMessage/FormErrorMessage";
-import "../assets/style/auth.scss";
+import FormErrorMessage from "../../components/forms/ErrorMessage/FormErrorMessage";
+import "./auth.scss";
 
 function SignIn() {
   const [loading, setLoading] = useState(false);
@@ -30,23 +30,7 @@ function SignIn() {
       setLoading(false);
     }
   }
-  function validateInputs(values) {
-    const errors = {};
-    const { email, password } = values;
-    if (!email) {
-      errors.email = "email is required!";
-    } else if (!validator.isEmail(email)) {
-      errors.email = "email is invalid!";
-    }
-    if (!password) {
-      errors.password = "password is required!";
-    } else if (password.length < 6) {
-      errors.password = "password minimum length is 6 characters";
-    } else if (password.length > 32) {
-      errors.password = "password maximum length is 32 characters";
-    }
-    return errors;
-  }
+
   return (
     <>
       <div className="container">
@@ -64,7 +48,10 @@ function SignIn() {
                 name="email"
                 placeholder="Email"
                 type="email"
-                className={cls(errors.email ? "error" : "", "main-input mb-4")}
+                className={cls(
+                  errors.email && touched.email ? "error" : "",
+                  "main-input mb-4"
+                )}
               />
               {errors.email && touched.email ? (
                 <FormErrorMessage message={errors.email} />
@@ -74,7 +61,7 @@ function SignIn() {
                 placeholder="Password"
                 type="password"
                 className={cls(
-                  errors.password ? "error" : "",
+                  errors.password && touched.password ? "error" : "",
                   "main-input mb-4"
                 )}
               />
@@ -96,3 +83,21 @@ function SignIn() {
 }
 
 export default SignIn;
+
+function validateInputs(values) {
+  const errors = {};
+  const { email, password } = values;
+  if (!email) {
+    errors.email = "email is required!";
+  } else if (!validator.isEmail(email)) {
+    errors.email = "email is invalid!";
+  }
+  if (!password) {
+    errors.password = "password is required!";
+  } else if (password.length < 6) {
+    errors.password = "password minimum length is 6 characters";
+  } else if (password.length > 32) {
+    errors.password = "password maximum length is 32 characters";
+  }
+  return errors;
+}
