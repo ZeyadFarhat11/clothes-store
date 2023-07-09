@@ -1,37 +1,32 @@
-from rest_framework import serializers
-from django.contrib.auth.models import User
+from rest_framework import serializers 
+from .models import User
+from django.contrib.auth import authenticate
+from rest_framework.exceptions import AuthenticationFailed
 
 class RegisterSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField(max_length=255,)
-    first_name = serializers.CharField(max_length=16,min_length=3)
-    last_name = serializers.CharField(max_length=16,min_length=3)
-    password = serializers.CharField(max_length=32,min_length=6,write_only=True)
-
+    password = serializers.CharField(max_length=32,min_length=6,
+                                     write_only = True,required=True,
+                                     style = {'input_type':'password'})
+    
     class Meta:
         model = User
-        fields = ['email','first_name','last_name','password']
-
-
-    def validate_username(self, value):
-        if not value.isalnum():
-            raise serializers.ValidationError(f'{value} should only contain alphanumeric characters')
-
-        if User.objects.filter(username=value).exists():
-            raise serializers.ValidationError({"path": "username", "value": value, "message": "username already exist."})
-        return value
+        fields = ['email','first_name','last_name','password'] 
     
-    def validate_email(self, value):
+    def validate_email(self,value):
         if User.objects.filter(email=value).exists():
-            raise serializers.ValidationError({"path": "email", "value": value, "message": "email already exist."})
+            raise serializers.ValidationError({'path':'email','value':value,'message':'email already exist.'})
         return value
-
+    
+    def validate_first_name(self, value):
+        if not value.isalpha():
+            raise serializers.ValidationError('First name must contain only letters.')
+        return value
+    
+    def validate_last_name(self, value):
+        if not value.isalpha():
+            raise serializers.ValidationError('Last name must contain only letters.')
+        return value
+    
     def create(self, validated_data):
-        user= User.objects.create_user(**validated_data)
-        return user
-    
-    
-class LoginSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField(max_length = 255)
-    username = serializers.CharField(max_length=32,read_only=True)
-    password = serializers.CharField(max_length=32,min_length=6,write_only=True)
-    tokens = serializers.SerializerMethodField()
+        return User.objects.create_user(**validated_data)
+
