@@ -9,11 +9,26 @@
   text-transform: capitalize;
   font-family: "Jost", sans-serif;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  margin-bottom: 0;
+}
 input {
   text-transform: none;
 }
 img {
   max-width: 100%;
+}
+
+body {
+  height: 5000px;
 }
 
 .main-input {
@@ -31,5 +46,8 @@ img {
     // border-width: 2px;
     // border-color: $border-color-active;
     outline: 1px solid #000;
+  }
+  &.error {
+    border-color: $danger;
   }
 }

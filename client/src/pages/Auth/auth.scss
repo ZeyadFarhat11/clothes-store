@@ -1,4 +1,4 @@
-@import "./components.scss";
+@import "../../assets/style/components.scss";
 .sign-in-form,
 .sign-up-form {
   margin: auto;
@@ -15,6 +15,14 @@
   .main-button {
     display: block;
     margin: auto;
+  }
+
+  .input-splitter {
+    display: flex;
+    gap: 20px;
+    > div {
+      flex-grow: 1;
+    }
   }
 
   .have-account {
