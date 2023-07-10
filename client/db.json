@@ -1,0 +1,303 @@
+{
+  "products": [
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "15%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "105879199"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "926851980"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "12%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "491605350"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "523867956"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "65313487"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "18%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "845605779"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "245262748"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "289378538"
+    },
+    {
+      "type": "new-arrival",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "580951354"
+    },
+
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "15%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "622528472"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "113117187"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "12%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "189924930"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "780556252"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "646601603"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "discount": "18%",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "116912089"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "800478800"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" },
+        { "hex": "#e37b7b", "name": "red" }
+      ],
+      "id": "155053422"
+    },
+    {
+      "type": "elegant-product",
+      "images": [
+        "https://dt-neytiri.myshopify.com/cdn/shop/products/4.2_72363679-0df6-4453-9ea6-f1b9a89cce56.jpg?v=1677649850&width=533"
+      ],
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 500,
+      "oldPrice": 650,
+      "currency": { "name": "USD", "symbol": "$" },
+      "colors": [
+        { "hex": "#e37b7b", "name": "red" },
+        { "hex": "#27bf6b", "name": "green" }
+      ],
+      "id": "640171180"
+    }
+  ]
+}
