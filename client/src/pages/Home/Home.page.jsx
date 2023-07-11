@@ -95,8 +95,8 @@ function __Section() {}
 function ___Section() {}
 
 function ProductCard({
-  images,
-  discount,
+  image,
+
   title,
   price,
   oldPrice,
@@ -106,7 +106,11 @@ function ProductCard({
   return (
     <div className="product-card">
       <div className="media">
-        {!!discount && <span className="discount">OFF {discount}</span>}
+        {!!oldPrice && (
+          <span className="discount">
+            OFF {((oldPrice - price) / oldPrice) * 100}%
+          </span>
+        )}
         <button className="add-to-compare" type="button" title="add to compare">
           <FontAwesomeIcon icon={faCodeCompare} />
         </button>
@@ -121,14 +125,7 @@ function ProductCard({
           add to cart
         </button>
 
-        {images.map((image, i) => (
-          <img
-            key={i}
-            className="product-image active"
-            src={image}
-            alt={title}
-          />
-        ))}
+        <img className="product-image" src={image} alt={title} />
       </div>
       <div className="content">
         <h4 className="title">{title}</h4>
@@ -148,9 +145,9 @@ function ProductCard({
           {colors.slice(0, 4).map((color, i) => (
             <button
               className="color"
-              style={{ background: color.hex, outlineColor: color.hex }}
+              style={{ background: color.rgb, outlineColor: color.rgb }}
               key={i}
-              title={color.name}
+              title={color.color}
             />
           ))}
           {colors.length > 4 && (

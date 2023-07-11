@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "mahmoud": "npm i && vite"
+    "server": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

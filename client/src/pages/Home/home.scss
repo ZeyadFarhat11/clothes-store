@@ -69,10 +69,6 @@
       }
       .product-image {
         border-radius: 10px;
-        display: none;
-        &.active {
-          display: initial;
-        }
       }
     }
     .content {
