@@ -1,0 +1,216 @@
+{
+  "products": [
+    {
+      "id": "32346041641",
+      "title": "Regular Fit Round Neck T-Shirt",
+      "price": 14,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Rock Blue", "rgb": "rgb(154, 178, 200)" },
+        { "color": "Juniper", "rgb": "rgb(111, 145, 151)" },
+        { "color": "Viridian Green", "rgb": "rgb(107, 139, 121)" },
+        { "color": "Lynch", "rgb": "rgb(98, 120, 142)" },
+        { "rgb": "" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/1.1_8f8c9fef-16c4-4df1-bd4d-c9a15c255eee.jpg?v=1677648450&width=533"
+    },
+    {
+      "id": "478051627055",
+      "title": "Ultra Soft Satchel Bag",
+      "price": 24,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Gold Fusion", "rgb": "rgb(125, 122, 87)" },
+        { "color": "Fuscous Gray", "rgb": "rgb(84, 80, 65)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/74.1.jpg?v=1677817500&width=533"
+    },
+    {
+      "id": "112105488545",
+      "title": "Fashionable Shoulder Handbag",
+      "price": 22,
+      "oldPrice": 25,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Wewak", "rgb": "rgb(228, 168, 168)" },
+        { "color": "Bon Jour", "rgb": "rgb(233, 222, 225)" },
+        { "color": "Gainsboro", "rgb": "rgb(221, 220, 227)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/4.1_8b7ed33a-cf64-426c-8f82-ef03d18288c3.jpg?v=1677649847&width=533"
+    },
+    {
+      "id": "906196416589",
+      "title": "Double Handle Shoulder Bag",
+      "price": 20,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Pale Silver", "rgb": "rgb(217, 188, 192)" },
+        { "color": "Silver Rust", "rgb": "" },
+        { "color": "Cloud", "rgb": "rgb(199, 197, 197)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/67.1.jpg?v=1677759681&width=533"
+    },
+    {
+      "id": "2496162896",
+      "title": "Regular Fit Full Sleeve Shirt",
+      "price": 22,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Bandicoot", "rgb": "rgb(128, 136, 112)" },
+        { "color": "Star Dust", "rgb": "rgb(156, 164, 157)" },
+        { "color": "Oslo Gray", "rgb": "rgb(136, 137, 150)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/17.1.jpg?v=1677650631&width=533"
+    },
+    {
+      "id": "915363797918",
+      "title": "Small Purse Hand Bag",
+      "price": 30,
+      "oldPrice": 40,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Zinnwaldite", "rgb": "rgb(227, 194, 173)" },
+        { "color": "Clam Shell", "rgb": "rgb(208, 172, 167)" },
+        { "color": "Pink Flare", "rgb": "rgb(214, 192, 201)" },
+        { "color": "Mischka", "rgb": "rgb(213, 205, 229)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/16.1.jpg?v=1677650587&width=533"
+    },
+    {
+      "id": "980585804675",
+      "title": "Regular Solid Denim Jakets",
+      "price": 22,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Iceberg", "rgb": "rgb(104, 187, 217)" },
+        { "color": "Cadet Grey", "rgb": "rgb(151, 166, 173)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/14.1.jpg?v=1677656172&width=533"
+    },
+    {
+      "id": "203587824246",
+      "title": "Flap Over Sling Hand Bag",
+      "price": 12,
+      "type": "new-arrival",
+      "colors": [
+        { "color": "Dusty Gray", "rgb": "rgb(161, 145, 166)" },
+        { "color": "Pewter", "rgb": "rgb(151, 164, 170)" },
+        { "color": "Venus", "rgb": "rgb(159, 138, 142)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/3.1_3c54d303-a2d8-40da-acb4-984d403956ee.jpg?v=1677649649&width=533"
+    },
+    {
+      "id": "988073241897",
+      "title": "Summer Sleeveless T-Shirt",
+      "price": 9,
+      "oldPrice": 12,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Pale Chestnut", "rgb": "rgb(222, 177, 174)" },
+        { "color": "Pale Cerulean", "rgb": "rgb(163, 194, 225)" },
+        { "color": "Opal", "rgb": "rgb(160, 189, 197)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/39.1.jpg?v=1677742945&width=533"
+    },
+    {
+      "id": "520239317790",
+      "title": "Denim Regular Fit Shorts",
+      "price": 15,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Outer Space", "rgb": "rgb(42, 49, 61)" },
+        { "color": "Tiara", "rgb": "rgb(196, 205, 209)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/40.1.jpg?v=1677743613&width=533"
+    },
+    {
+      "id": "691189867678",
+      "title": "Push Lock Clutch Handbag",
+      "price": 18,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Dark Vanilla", "rgb": "rgb(213, 184, 170)" },
+        { "color": "Silver Pink", "rgb": "rgb(203, 173, 171)" },
+        { "color": "Rocket Metallic", "rgb": "rgb(137, 128, 111)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/41.1.jpg?v=1677743875&width=533"
+    },
+    {
+      "id": "834510334535",
+      "title": "Full Sleeve Casual Shirt",
+      "price": 14,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Rock Blue", "rgb": "rgb(155, 184, 215)" },
+        { "color": "Nebula", "rgb": "rgb(207, 220, 219)" },
+        { "color": "Botticelli", "rgb": "rgb(205, 220, 225)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/42.1.jpg?v=1677744435&width=533"
+    },
+    {
+      "id": "689435434528",
+      "title": "Sleeveless Party Gown",
+      "price": 25,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Feldgrau", "rgb": "rgb(76, 109, 89)" },
+        { "color": "Scarpa Flow", "rgb": "rgb(84, 83, 97)" },
+        { "color": "Chicago", "rgb": "rgb(88, 88, 90)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/shop-47-1-1.jpg?v=1677827398&width=533"
+    },
+    {
+      "id": "713329660940",
+      "title": "Babies Summer Tank Top",
+      "price": 2,
+      "oldPrice": 5,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Melon", "rgb": "rgb(251, 172, 168)" },
+        { "color": "Dark Vanilla", "rgb": "rgb(215, 189, 176)" },
+        { "color": "Pastel Gray", "rgb": "rgb(210, 214, 189)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/60.1.jpg?v=1677757247&width=533"
+    },
+    {
+      "id": "801518668188",
+      "title": "Short Sleeve T-Shirt",
+      "price": 5,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Rock Blue", "rgb": "rgb(154, 178, 200)" },
+        { "color": "Gum Leaf", "rgb": "rgb(172, 210, 187)" },
+        { "color": "Sinbad", "rgb": "rgb(161, 204, 210)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/shop-47copy-1.2.jpg?v=1677833356&width=533"
+    },
+    {
+      "id": "290410302813",
+      "title": "A Line Maxi Dress",
+      "price": 14,
+      "oldPrice": 20,
+      "type": "elegant-product",
+      "colors": [
+        { "color": "Scarpa Flow", "rgb": "rgb(86, 83, 91)" },
+        { "color": "Chicago", "rgb": "rgb(95, 90, 90)" }
+      ],
+      "currency": { "symbol": "$", "name": "USD" },
+      "image": "https://dt-neytiri.myshopify.com/cdn/shop/products/44.1.jpg?v=1677748194&width=533"
+    }
+  ]
+}
