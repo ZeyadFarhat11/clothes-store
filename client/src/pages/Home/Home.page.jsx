@@ -142,14 +142,19 @@ function ProductCard({
           )}
         </div>
         <div className="colors">
-          {colors.slice(0, 4).map((color, i) => (
-            <button
-              className="color"
-              style={{ background: color.rgb, outlineColor: color.rgb }}
-              key={i}
-              title={color.color}
-            />
-          ))}
+          {colors
+            .slice(0, 4)
+            .map(
+              (color, i) =>
+                !!color.rgb && (
+                  <button
+                    className="color"
+                    style={{ background: color.rgb, outlineColor: color.rgb }}
+                    key={i}
+                    title={color.color}
+                  />
+                )
+            )}
           {colors.length > 4 && (
             <span className="colors-rest">+{colors.length - 4}</span>
           )}

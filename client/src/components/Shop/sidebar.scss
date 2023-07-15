@@ -1,0 +1,19 @@
+.sidebar {
+  .filter-item {
+    margin-bottom: 20px;
+    .header {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+    }
+    .content {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
