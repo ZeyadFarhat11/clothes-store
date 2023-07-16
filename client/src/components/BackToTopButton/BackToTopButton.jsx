@@ -7,8 +7,15 @@ import { useWindowScroll } from "@uidotdev/usehooks";
 function BackToTopButton() {
   const [{ y }] = useWindowScroll();
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
+
   return (
-    <button className={cls("back-to-top", y > 750 ? "active" : "")}>
+    <button
+      className={cls("back-to-top", y > 750 ? "active" : "")}
+      onClick={handleClick}
+    >
       <span className="arrow">
         <FontAwesomeIcon icon={faArrowUp} />
       </span>

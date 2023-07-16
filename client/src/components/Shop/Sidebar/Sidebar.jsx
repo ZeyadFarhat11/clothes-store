@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./sidebar.scss";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { cls } from "../../utils/utils";
+import { cls } from "../../../utils/utils";
 import { useState } from "react";
 
 function Sidebar() {
