@@ -9,6 +9,7 @@
   bottom: -100px;
   right: 20px;
   transition: 500ms;
+  z-index: 50;
   &:hover {
     .arrow {
       top: -50%;

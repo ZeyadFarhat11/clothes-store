@@ -1,0 +1,23 @@
+.sidebar {
+  padding: 20px;
+  .filter-item {
+    margin-bottom: 20px;
+    .header {
+      all: unset;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+      h3 {
+        font-size: 27px;
+      }
+    }
+    .content {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

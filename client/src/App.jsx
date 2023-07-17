@@ -9,6 +9,7 @@ import "./assets/style/style.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Header from "./components/Header/Header";
 import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
+import Shop from "./pages/Shop/Shop.page";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </>
   );
