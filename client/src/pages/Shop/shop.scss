@@ -1,7 +1,17 @@
 main.shop {
-  > .content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+  .container-fluid {
+    > .content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+  }
+  .products-wrapper {
+    > header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
   }
   .products-grid {
     padding-top: 20px;
