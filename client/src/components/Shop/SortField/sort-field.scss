@@ -1,0 +1,51 @@
+.sort-field {
+  position: relative;
+  width: 200px;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #363636;
+    border-radius: 7px;
+    padding: 5px 10px;
+    cursor: pointer;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    svg {
+      font-size: 13px;
+    }
+  }
+  &.active {
+    .sort-menu {
+      opacity: 1;
+      z-index: 10;
+      top: 50px;
+    }
+  }
+  .sort-menu {
+    position: absolute;
+    top: 20px;
+    z-index: 50;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 5px 3px 10px rgba(7, 7, 7, 0.356);
+    padding: 10px 0;
+    margin: 0px;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: 400ms;
+    li {
+      padding: 5px 15px;
+      cursor: pointer;
+      &.active {
+        color: #ccc;
+      }
+      &:not(.active):hover {
+        background: #f1f1f1;
+      }
+    }
+  }
+}

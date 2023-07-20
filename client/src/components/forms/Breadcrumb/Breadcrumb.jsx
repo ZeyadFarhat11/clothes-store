@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
+import { cls } from "../../../utils/utils";
 import "./breadcrumb.scss";
 import { Link } from "react-router-dom";
 
-function Breadcrumb({ children, paths = [] }) {
+function Breadcrumb({ children, paths = [], className, ...rest }) {
   return (
-    <div className="main-breadcrumb">
+    <div className={cls("main-breadcrumb", className)} {...rest}>
       <h2>{children}</h2>
       <div className="wrapper">
         <Link to="/">home</Link>
