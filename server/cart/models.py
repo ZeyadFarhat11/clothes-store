@@ -17,6 +17,11 @@ class CartItem(models.Model):
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=0)
 
+    def save(self, *args, **kwargs):
+        self.product.stock_number -= self.quantity
+        self.product.save()
+        super().save(*args, **kwargs)
+
     def __str__(self) -> str:
-        return str(Cart.user)
+        return f'{str(self.product.title)} - {str(self.cart.user)}'
 

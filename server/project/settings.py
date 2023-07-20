@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     'authentication',
     'product',
     'cart',
-    'allauth',
-    'allauth.account',
 ]
 
 
