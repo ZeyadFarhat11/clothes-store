@@ -22,4 +22,3 @@ class CartSerializer(serializers.ModelSerializer):
         model = Cart
         fields = '__all__'
         read_only_fields = ['user','created_at']
-        

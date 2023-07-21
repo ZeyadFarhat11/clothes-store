@@ -3,9 +3,11 @@ from .models import Cart, CartItem
 from .serializers import CartSerializer, CartItemSerializer
 # Create your views here.
 
+
 class CartList(generics.ListCreateAPIView):
-    queryset = Cart.objects.all()
+    queryset = Cart.objects.first()
     serializer_class = CartSerializer
+    pagination_class = None
 
     def get_queryset(self):
         return Cart.objects.filter(user=self.request.user)

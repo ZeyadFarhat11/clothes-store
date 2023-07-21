@@ -1,10 +1,17 @@
-from .models import Product
-from .serializers import ProductSerializer
+from .models import Product,Color
+from .serializers import ProductSerializer,ColorSerializer
 from rest_framework import generics,filters
 from rest_framework import permissions
 from .permissions import IsAdminUserOrReadOnly
 
+class ColorList(generics.ListCreateAPIView):
+    queryset = Color.objects.all()
+    serializer_class = ColorSerializer
 
+class ColorDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Color.objects.all()
+    serializer_class = ColorSerializer
+    lookup_field = 'id'
 
 class ProductAPIView(generics.ListCreateAPIView):
     queryset = Product.objects.all()

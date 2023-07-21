@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-54#y7@fk&z@1)mgdle1b43!0!a3-c&41ufcj=17!)$4-$(f63*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.1.15","192.168.1.7","192.168.1.5",'127.0.0.1']
+ALLOWED_HOSTS = ["192.168.1.3","192.168.1.7","192.168.1.5",'127.0.0.1']
 
 AUTH_USER_MODEL = 'authentication.User'
 # Application definition
@@ -44,13 +44,14 @@ INSTALLED_APPS = [
     'authentication',
     'product',
     'cart',
+    'payment',
 ]
 
 
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 5,
+    'PAGE_SIZE': 16,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
