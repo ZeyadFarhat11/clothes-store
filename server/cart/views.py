@@ -3,9 +3,11 @@ from .models import Cart, CartItem
 from .serializers import CartSerializer, CartItemSerializer
 # Create your views here.
 
+
 class CartList(generics.ListCreateAPIView):
-    queryset = Cart.objects.all()
+    queryset = Cart.objects.first()
     serializer_class = CartSerializer
+    pagination_class = None
 
     def get_queryset(self):
         return Cart.objects.filter(user=self.request.user)
@@ -27,16 +29,20 @@ class CartItemList(generics.ListCreateAPIView):
     serializer_class = CartItemSerializer
 
     def get_queryset(self):
-        return CartItem.objects.filter(cart__id=self.kwargs['cart_pk'])
+        user = self.request.user
+        cart = Cart.objects.get(user_id=user.id)
+        return CartItem.objects.filter(cart_id=cart.id) 
     
     def perform_create(self, serializer):
-        cart = Cart.objects.get(pk=self.kwargs['cart_pk'],)
+        user = self.request.user
+        cart = Cart.objects.get(user_id=user.id)
         serializer.save(cart=cart)
 
 
 class CartItemDetails(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CartItemSerializer
 
-
     def get_queryset(self):
-        return CartItem.objects.filter(cart__id=self.kwargs['cart_pk'])
+        user = self.request.user
+        cart = Cart.objects.get(user_id=user.id)
+        return CartItem.objects.filter(cart_id=cart.id)
