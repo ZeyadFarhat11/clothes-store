@@ -1,0 +1,110 @@
+@import "../../assets/style/components.scss";
+
+.cart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 60;
+  left: 100%;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #d6d6d6;
+  transition: 400ms;
+  &.active {
+    left: calc(100% - 400px);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 3px 15px #e7e7e7;
+    .close {
+      all: unset;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+  .body {
+    height: calc(100vh - 72.67px - 309.84px);
+    overflow-y: auto;
+    .cart-item {
+      position: relative;
+      display: flex;
+      padding: 20px;
+      border-bottom: 1px solid $border-color;
+      .image {
+        padding: 10px;
+        width: 100px;
+      }
+      .info {
+        h5 {
+          max-width: 150px;
+        }
+      }
+      .remove {
+        all: unset;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        // font-size: 16px;
+        background-color: #fff;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 20px #00000026;
+      }
+    }
+  }
+
+  footer {
+    padding: 20px;
+    box-shadow: 0 -3px 15px #e7e7e7;
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border-color;
+      button {
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        svg {
+          font-size: 25px;
+        }
+        span {
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+    summary {
+      padding: 20px 0;
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      p {
+        font-size: 15px;
+        margin-top: 7px;
+      }
+    }
+    .btns {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      button {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -3,13 +3,14 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { api } from "../utils/utils";
 import jwtDecode from "jwt-decode";
 
-const AuthContext = createContext();
+const Context = createContext();
 
-export function AuthProvider({ children }) {
+export function GlobalProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [accessToken, setAccessToken] = useState(localStorage.accessToken);
   const [refreshToken, setRefreshToken] = useState(localStorage.refreshToken);
   const [user, setUser] = useState(accessToken ? jwtDecode(accessToken) : null);
+  const [cartIsActive, setCartIsActive] = useState(false);
 
   // console.log({
   //   accessDecode: jwtDecode(accessToken),
@@ -56,13 +57,13 @@ export function AuthProvider({ children }) {
     setAccessToken,
     refreshToken,
     setRefreshToken,
+    cartIsActive,
+    setCartIsActive,
   };
 
-  return (
-    <AuthContext.Provider value={contextData}>{children}</AuthContext.Provider>
-  );
+  return <Context.Provider value={contextData}>{children}</Context.Provider>;
 }
 
-export default function useAuthContext() {
-  return useContext(AuthContext);
+export default function useGlobalContext() {
+  return useContext(Context);
 }

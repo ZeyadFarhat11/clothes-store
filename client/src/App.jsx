@@ -10,6 +10,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import Header from "./components/Header/Header";
 import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 import Shop from "./pages/Shop/Shop.page";
+import Cart from "./components/Cart/Cart";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
+      <Cart />
     </>
   );
 }

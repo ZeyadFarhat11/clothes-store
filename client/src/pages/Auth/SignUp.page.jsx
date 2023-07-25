@@ -5,12 +5,14 @@ import { cls, api } from "../../utils/utils";
 import { useState } from "react";
 import handleError from "../../utils/handleError";
 import Breadcrumb from "../../components/forms/Breadcrumb/Breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FormErrorMessage from "../../components/forms/ErrorMessage/FormErrorMessage";
 import "./auth.scss";
+import { toast } from "react-toastify";
 
 function SignUp() {
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(values) {
     console.log(`submit values =>`, values);
@@ -19,9 +21,13 @@ function SignUp() {
     setLoading(true);
 
     try {
-      const response = await api.post("/register", values);
-      if (response.status === 200) {
-        console.log(`success`);
+      const response = await api.post("/register/", values, {
+        headers: { Authorization: undefined },
+      });
+      console.log(response);
+      if (response.status === 201) {
+        toast.success("Register success, Please login in");
+        navigate("/sign-in");
       }
     } catch (err) {
       handleError(err);
@@ -38,9 +44,8 @@ function SignUp() {
           initialValues={{
             email: "",
             password: "",
-            firstName: "",
-            lastName: "",
-            username: "",
+            first_name: "",
+            last_name: "",
           }}
           onSubmit={handleSubmit}
           validate={validateInputs}
@@ -55,30 +60,30 @@ function SignUp() {
               <div className="input-splitter">
                 <div>
                   <Field
-                    name="firstName"
+                    name="first_name"
                     placeholder="First Name"
                     type="text"
                     className={cls(
-                      errors.firstName && touched.firstName ? "error" : "",
+                      errors.first_name && touched.first_name ? "error" : "",
                       "main-input mb-4"
                     )}
                   />
-                  {errors.firstName && touched.firstName ? (
-                    <FormErrorMessage message={errors.firstName} />
+                  {errors.first_name && touched.first_name ? (
+                    <FormErrorMessage message={errors.first_name} />
                   ) : null}
                 </div>
                 <div>
                   <Field
-                    name="lastName"
+                    name="last_name"
                     placeholder="Last Name"
                     type="text"
                     className={cls(
-                      errors.lastName && touched.lastName ? "error" : "",
+                      errors.last_name && touched.last_name ? "error" : "",
                       "main-input mb-4"
                     )}
                   />
-                  {errors.lastName && touched.lastName ? (
-                    <FormErrorMessage message={errors.lastName} />
+                  {errors.last_name && touched.last_name ? (
+                    <FormErrorMessage message={errors.last_name} />
                   ) : null}
                 </div>
               </div>
@@ -119,20 +124,20 @@ export default SignUp;
 
 function validateInputs(values) {
   const errors = {};
-  const { email, password, firstName, lastName } = values;
-  if (!firstName) {
-    errors.firstName = "first name is required!";
-  } else if (firstName.length < 3) {
-    errors.firstName = "first minimum length is 3 characters";
-  } else if (firstName.length > 16) {
-    errors.firstName = "first maximum length is 16 characters";
+  const { email, password, first_name, last_name } = values;
+  if (!first_name) {
+    errors.first_name = "first name is required!";
+  } else if (first_name.length < 3) {
+    errors.first_name = "first minimum length is 3 characters";
+  } else if (first_name.length > 16) {
+    errors.first_name = "first maximum length is 16 characters";
   }
-  if (!lastName) {
-    errors.lastName = "last name is required!";
-  } else if (lastName.length < 3) {
-    errors.lastName = "last minimum length is 3 characters";
-  } else if (lastName.length > 16) {
-    errors.lastName = "last maximum length is 16 characters";
+  if (!last_name) {
+    errors.last_name = "last name is required!";
+  } else if (last_name.length < 3) {
+    errors.last_name = "last minimum length is 3 characters";
+  } else if (last_name.length > 16) {
+    errors.last_name = "last maximum length is 16 characters";
   }
   if (!email) {
     errors.email = "email is required!";

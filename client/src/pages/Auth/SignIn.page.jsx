@@ -5,12 +5,16 @@ import { cls, api } from "../../utils/utils";
 import { useState } from "react";
 import handleError from "../../utils/handleError";
 import Breadcrumb from "../../components/forms/Breadcrumb/Breadcrumb";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FormErrorMessage from "../../components/forms/ErrorMessage/FormErrorMessage";
 import "./auth.scss";
+import { toast } from "react-toastify";
+import useGlobalContext from "../../context/global.context";
 
 function SignIn() {
   const [loading, setLoading] = useState(false);
+  const { setAccessToken, setRefreshToken } = useGlobalContext();
+  const navigate = useNavigate();
 
   async function handleSubmit(values) {
     // const { email, password } = values;
@@ -19,10 +23,17 @@ function SignIn() {
     if (loading) return;
     setLoading(true);
 
+    toast.success("Login success");
     try {
-      const response = await api.post("/auth/login", values);
+      const response = await api.post("/token/", values);
       if (response.status === 200) {
-        console.log(`success`);
+        console.log(response);
+        const { access, refresh } = response.data;
+        localStorage.setItem("accessToken", access);
+        localStorage.setItem("refreshToken", refresh);
+        setAccessToken(access);
+        setRefreshToken(refresh);
+        navigate("/");
       }
     } catch (err) {
       handleError(err);
@@ -34,7 +45,7 @@ function SignIn() {
   return (
     <>
       <div className="container">
-        <Breadcrumb>account</Breadcrumb>
+        <Breadcrumb>login</Breadcrumb>
         <Formik
           initialValues={{ email: "", password: "" }}
           onSubmit={handleSubmit}

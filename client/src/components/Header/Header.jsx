@@ -10,10 +10,17 @@ import "./header.scss";
 import { useState } from "react";
 import logo from "../../assets/img/logo-dark.webp";
 import { NavLink } from "react-router-dom";
+import useGlobalContext from "../../context/global.context";
 const CURRENCIES = ["AU", "CA", "IN", "AE", "GB", "US"];
 const LANGUAGES = ["English", "Français", "Deutsche"];
 
 function Header() {
+  const { setCartIsActive } = useGlobalContext();
+
+  const openCart = () => {
+    setCartIsActive(true);
+  };
+
   return (
     <div id="header">
       <header>
@@ -43,7 +50,7 @@ function Header() {
             <button>
               <FontAwesomeIcon icon={faSearch} />
             </button>
-            <button>
+            <button onClick={openCart}>
               <FontAwesomeIcon icon={faBagShopping} />
             </button>
             <button>
